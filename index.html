@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message for You</title>
+    <link rel="stylesheet" href="additional/styles.css">
+    <script>
+        function copyLink() {
+            const link = "https://real-time-chat-app-82302.web.app";
+            navigator.clipboard.writeText(link).then(() => {
+                alert("Link copied to clipboard!");
+            }).catch(err => {
+                console.error("Error copying the link: ", err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Good Morning!</h1>
+        <p>I hope that you are all well and not feeling too pressured by your parents. Maybe I am assuming that your parents are in a break because of the cyclone, and that’s why.</p>
+        <p>Hey, I wanted to share something with you. I was working on a website for 8 straight days without sleeping, and I almost gave up on it. But yesterday, I thought about you instead of myself. I realized how much I wanted to talk to you, whether on WhatsApp or another platform.</p>
+        <p>So, with all my dedication, I created a website that actually works! We can both chat there. You can open the site in incognito mode and log in with your account. Don’t worry; I made sure it’s secure and only we will know about it.</p>
+        <p>In the future, I will make it an even better alternative just for us. Here is the link, and I’ll be waiting for you there:</p>
+        <p>
+            <button onclick="copyLink()" class="copy-button">Copy Link</button>
+        </p>
+        <p>Also, please use the username <strong>"PnP"</strong> and my username is <strong>"SS-P"</strong>.</p>
+        <div class="heart-container">
+            <object type="image/svg+xml" data="additional/heart.svg" class="heart"></object>
+        </div>
+        <p class="footer">I will be waiting for you soon!</p>
+    </div>
+</body>
+</html>
